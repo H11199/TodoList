@@ -52,11 +52,12 @@ main {
 }
 .form-box {
   margin-top: 40px;
+  width: 400px;
   text-align: center;
 }
 .inp {
   height: 30px;
-  width: 400px;
+  width: 100%;
   color: rgb(247, 63, 63);
   font-size: 18px;
   text-decoration: underline;
@@ -78,4 +79,16 @@ main {
 input:checked + p {
   text-decoration: line-through;
   text-decoration-color: rgb(247, 63, 63);
+}
+
+@media(max-width: 600px){
+  .list-box{
+    width: 300px;
+  }
+  .form-box{
+    width: 300px;
+  }
+  main{
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
 }
